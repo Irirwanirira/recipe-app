@@ -1,0 +1,22 @@
+<%= form_with(model: add_user_to_inventory) do |form| %>
+  <% if add_user_to_inventory.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(add_user_to_inventory.errors.count, "error") %> prohibited this add_user_to_inventory from being saved:</h2>
+
+      <ul>
+        <% add_user_to_inventory.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :user_id_id, style: "display: block" %>
+    <%= form.text_field :user_id_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,1 @@
+json.partial! "add_food_to_inventory_foods/add_food_to_inventory_food", add_food_to_inventory_food: @add_food_to_inventory_food

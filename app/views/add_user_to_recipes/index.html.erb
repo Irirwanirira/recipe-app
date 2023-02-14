@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Add user to recipes</h1>
+
+<div id="add_user_to_recipes">
+  <% @add_user_to_recipes.each do |add_user_to_recipe| %>
+    <%= render add_user_to_recipe %>
+    <p>
+      <%= link_to "Show this add user to recipe", add_user_to_recipe %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New add user to recipe", new_add_user_to_recipe_path %>

@@ -1,0 +1,22 @@
+<%= form_with(model: add_recipe_to_recipe_food) do |form| %>
+  <% if add_recipe_to_recipe_food.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(add_recipe_to_recipe_food.errors.count, "error") %> prohibited this add_recipe_to_recipe_food from being saved:</h2>
+
+      <ul>
+        <% add_recipe_to_recipe_food.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :recipe_id_id, style: "display: block" %>
+    <%= form.text_field :recipe_id_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

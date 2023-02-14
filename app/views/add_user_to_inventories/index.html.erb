@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Add user to inventories</h1>
+
+<div id="add_user_to_inventories">
+  <% @add_user_to_inventories.each do |add_user_to_inventory| %>
+    <%= render add_user_to_inventory %>
+    <p>
+      <%= link_to "Show this add user to inventory", add_user_to_inventory %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New add user to inventory", new_add_user_to_inventory_path %>

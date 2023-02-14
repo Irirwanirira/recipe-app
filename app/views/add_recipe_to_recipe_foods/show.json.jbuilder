@@ -1,0 +1,1 @@
+json.partial! "add_recipe_to_recipe_foods/add_recipe_to_recipe_food", add_recipe_to_recipe_food: @add_recipe_to_recipe_food
