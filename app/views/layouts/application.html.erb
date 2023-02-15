@@ -11,13 +11,19 @@
   </head>
 
   <body>
-    <h1>Home#index</h1>
-    <p>Find me in app/views/home/index.html.erb</p>
-    <%= link_to "Log out", destroy_user_session_path, data: { "turbo-method":
-    :delete } %>
+    <ul class="navbar">
+     <li><%= link_to "Log out", destroy_user_session_path, data: { "turbo-method":
+     :delete } %></li>
+
+      <li><%= link_to "Food List", foods_path%><li>
+      <li><%= link_to "Recipe List", recipes_path%><li>
+
+    </ul>
+   
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+
   </body>
 </html>
