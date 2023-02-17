@@ -5,4 +5,7 @@ class Inventory < ApplicationRecord
   def related_inventory_foods
     inventory_foods.includes(:food)
   end
+
+  validates :name, presence: true, length: { in: 1..25 }
+  validates :description, presence: true, length: { in: 1..250 }
 end
