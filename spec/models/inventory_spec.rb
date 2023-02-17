@@ -8,7 +8,7 @@ RSpec.describe Inventory, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'name should not be too long' do
+  it 'Name should not be too long' do
     subject.description = 'a' * 251
     expect(subject).to_not be_valid
   end
