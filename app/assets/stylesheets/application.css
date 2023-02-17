@@ -602,3 +602,37 @@ th {
 .recipes-list span button:hover {
   opacity: 0.7;
 }
+
+.sign_up_div,
+.sign_in_div,
+.forget_password_div,
+.user_profile_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.sign_up_text,
+.sign_in_text,
+.forget_password {
+  color: rgb(68, 0, 255);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.actions_sign_up {
+  margin-top: 25px;
+}
+
+._field {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
